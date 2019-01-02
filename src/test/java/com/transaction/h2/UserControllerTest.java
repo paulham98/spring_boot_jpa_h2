@@ -9,8 +9,9 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-@SpringBootTest
+
 @RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class UserControllerTest {
 
     @Autowired
@@ -27,5 +28,6 @@ public class UserControllerTest {
         String url = "/api/v1/user/";
         ResponseEntity<String> responseUser = this.testRestTemplate.getForEntity(url, String.class );
         System.out.println(responseUser.getStatusCode());
+        System.out.println(responseUser);
     }
 }
