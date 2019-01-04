@@ -8,6 +8,6 @@ spring:
     url: jdbc:mysql://paulham-hello-mysql.cwciqwthg59b.ap-northeast-2.rds.amazonaws.com:3306/db2
     username: paulham
     password: skull034456
-    jpa:
-      hibernate: org.hibernate.dialect.MySQLDialcet
-        ddl-auto: create
+  jpa:
+    hibernate:
+      ddl-auto: create
