@@ -1,2 +1,14 @@
 hello:
  world: hello_dev
+ land: land_dev
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://paulham-hello-mysql.cwciqwthg59b.ap-northeast-2.rds.amazonaws.com:3306/db2
+    username: paulham
+    password: skull034456
+
+    jpa:
+      hibernate:
+        ddl-auto: create
