@@ -63,6 +63,10 @@
             <version>5.3.7.Final</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+        </dependency>
 
 
     </dependencies>

@@ -1,5 +1,6 @@
 package com.transaction.h2.services;
 
+import com.transaction.h2.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class HelloServiceTest {
 
     @Test
     public void getUsers() {
-        List<Users> users = helloService.getUsers();
+        List<User> users = helloService.getUsers();
         assertTrue(true);
 
     }
