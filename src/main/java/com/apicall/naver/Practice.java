@@ -13,7 +13,7 @@ public class Practice {
         String clientSecret = "a7XyTYjawx";//애플리케이션 클라이언트 시크릿값";
         try {
             String text = URLEncoder.encode("메이플스토리", "UTF-8");
-            String apiURL = "https://openapi.naver.com/v1/search/blog/?query=" + text;
+            String apiURL = "https://openapi.naver.com/v1/search/webkr" + text;
             URL url = new URL(apiURL);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
