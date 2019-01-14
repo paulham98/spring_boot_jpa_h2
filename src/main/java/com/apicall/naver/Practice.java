@@ -6,14 +6,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class practice {
+public class Practice {
 
     public static void main(String[] args) {
         String clientId = "0YWmAAZVcF4QBIAeYnu4";//애플리케이션 클라이언트 아이디값";
         String clientSecret = "a7XyTYjawx";//애플리케이션 클라이언트 시크릿값";
         try {
-            String code = "0"; // 키 발급시 0,  캡차 이미지 비교시 1로 세팅
-            String apiURL = "https://openapi.naver.com/v1/captcha/nkey?code=" + code;
+            String text = URLEncoder.encode("메이플스토리", "UTF-8");
+            String apiURL = "https://openapi.naver.com/v1/search/blog/?query=" + text;
             URL url = new URL(apiURL);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
