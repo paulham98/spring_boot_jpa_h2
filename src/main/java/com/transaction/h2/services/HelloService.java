@@ -4,6 +4,7 @@ import com.transaction.h2.domain.User;
 import com.transaction.h2.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,6 +27,7 @@ public class HelloService {
         return "profile hello.world:"+world;
     }
 
+    @Cacheable("getUsers")
     public List<User> getUsers() {
         List<User> user = userRepository.findAll();
         return user;
