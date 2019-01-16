@@ -9,13 +9,12 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name= "searchResult")
-public class User2 {
+@Table
+public class SearchResult {
 
     @Id
-    private long id;
-    private String name;
-    private String password;
+    private String search_result;
+
 
 
 
