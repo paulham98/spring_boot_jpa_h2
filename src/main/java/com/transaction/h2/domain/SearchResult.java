@@ -10,8 +10,6 @@ import java.util.List;
 @Data
 @Entity
 public class SearchResult {
-    @Id
-    private String result;
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
