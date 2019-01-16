@@ -16,7 +16,8 @@ public class SearchResult {
     private Long id;
     private String name;
     private String pincodeRegex;
-    private List<Practice> practiceList;
+    private String bloggername;
+    private List<bloggername> bloggernamesList;
 
 
 }
