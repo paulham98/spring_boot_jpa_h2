@@ -17,7 +17,5 @@ public class SearchResult {
     private String name;
     private String pincodeRegex;
     private String bloggername;
-    private List<bloggername> bloggernamesList;
-
 
 }
