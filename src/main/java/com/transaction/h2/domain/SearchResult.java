@@ -2,6 +2,8 @@ package com.transaction.h2.domain;
 
 
 import com.apicall.naver.Practice;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,5 +19,7 @@ public class SearchResult {
     private String name;
     private String pincodeRegex;
     private String bloggername;
+    private String items;
+
 
 }
